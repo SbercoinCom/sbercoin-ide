@@ -5,7 +5,7 @@ import * as packageJson from '../../../../../package.json'
 import yo from 'yo-yo'
 
 const themes = [
-  {name: 'Dark', quality: 'light', url: ''}
+  {name: 'Dark', quality: 'light', url: 'https://rawcdn.githack.com/SbercoinCom/sbercoin-ide/2567dff285a52ffbe0e4cef23a1788bb2e1dc83d/apps/remix-ide/src/assets/css/style.css'}
 ]
 
 const profile = {
