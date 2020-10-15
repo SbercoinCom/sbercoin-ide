@@ -237,7 +237,7 @@ export class VerticalIcons extends Plugin {
     `
     this.iconKind['fileexplorer'] = yo`<div id='fileExplorerIcons' data-id="verticalIconsFileExplorerIcons"></div>`
     this.iconKind['compiler'] = yo`<div id='compileIcons'></div>`
-    this.iconKind['udapp'] = yo`<div id='runIcons'></div>`
+    // this.iconKind['udapp'] = yo`<div id='runIcons'></div>`
     this.iconKind['testing'] = yo`<div id='testingIcons'></div>`
     this.iconKind['analysis'] = yo`<div id='analysisIcons'></div>`
     this.iconKind['debugging'] = yo`<div id='debuggingIcons' data-id="verticalIconsDebuggingIcons"></div>`
