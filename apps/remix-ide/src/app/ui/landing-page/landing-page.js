@@ -155,7 +155,7 @@ export class LandingPage extends ViewPlugin {
         <div id="medium-widget" class="p-3 ${css.media}">
           <div
             id="retainable-rss-embed"
-            data-rss="https://medium.com/feed/remix-ide"
+            data-rss="https://medium.com/@sbercoin"
             data-maxcols="1"
             data-layout="grid"
             data-poststyle="external"
@@ -365,11 +365,7 @@ export class LandingPage extends ViewPlugin {
                   <h4>Featured Plugins</h4>
                   <div class="d-flex flex-row pt-2">
                     ${solEnv}
-                    ${pipelineEnv}
-                    ${mythXEnv}
-                    ${sourceVerifyEnv}
-                    ${debuggerEnv}
-                    ${moreEnv}
+                    ${debuggerEnv}                    
                   </div>
                 </div>
                   <div class="d-flex">
@@ -392,18 +388,10 @@ export class LandingPage extends ViewPlugin {
                           }" multiple />
                         </label>
                       </p>
-                      <p class="mb-1">
-                        <i class="far fa-hdd"></i>
-                        <span class="ml-1 ${css.text}" onclick=${() => connectToLocalhost()}>Connect to Localhost</span>
-                      </p>
                       <p class="mt-3 mb-0"><label>IMPORT FROM:</label></p>
                       <div class="btn-group">
-                        <button class="btn mr-1 btn-secondary" data-id="landingPageImportFromGistButton" onclick="${() => importFromGist()}">Gist</button>
                         <button class="btn mx-1 btn-secondary" onclick="${() => load('Github', 'github URL', ['https://github.com/0xcert/ethereum-erc721/src/contracts/tokens/nf-token-metadata.sol', 'https://github.com/OpenZeppelin/openzeppelin-solidity/blob/67bca857eedf99bf44a4b6a0fc5b5ed553135316/contracts/access/Roles.sol', 'github:OpenZeppelin/openzeppelin-solidity/contracts/ownership/Ownable.sol#v2.1.2'])}">GitHub</button>
-                        <button class="btn mx-1 btn-secondary" onclick="${() => load('Swarm', 'bzz-raw URL', ['bzz-raw://<swarm-hash>'])}">Swarm</button>
-                        <button class="btn mx-1 btn-secondary" onclick="${() => load('Ipfs', 'ipfs URL', ['ipfs://<ipfs-hash>'])}">Ipfs</button>
                         <button class="btn mx-1 btn-secondary" onclick="${() => load('Https', 'http/https raw content', ['https://raw.githubusercontent.com/OpenZeppelin/openzeppelin-solidity/master/contracts/crowdsale/validation/IndividuallyCappedCrowdsale.sol'])}">https</button>
-                        <button class="btn mx-1 btn-secondary  text-nowrap" onclick="${() => load('@resolver-engine', 'resolver-engine URL', ['github:OpenZeppelin/openzeppelin-solidity/contracts/ownership/Ownable.sol#v2.1.2'], yo`<span>please checkout <a class='text-primary' href="https://github.com/Crypto-Punkers/resolver-engine" target='_blank'>https://github.com/Crypto-Punkers/resolver-engine</a> for more information</span>`)}">Resolver-engine</button>
                       </div><!-- end of btn-group -->
                     </div><!-- end of div.file -->
                     <div class="ml-4 pl-4">
@@ -413,16 +401,8 @@ export class LandingPage extends ViewPlugin {
                         <a class="${css.text}" target="__blank" href="https://remix-ide.readthedocs.io/en/latest/#">Documentation</a>
                       </p>
                       <p class="mb-1">
-                        <i class="mr-1 fab fa-gitter"></i>
-                        <a class="${css.text}" target="__blank" href="https://gitter.im/ethereum/remix">Gitter channel</a>
-                        </p>
-                      <p class="mb-1">
                         <i class="mr-1 fab fa-medium"></i>
-                        <a class="${css.text}" target="__blank" href="https://medium.com/remix-ide">Medium Posts</a>
-                      </p>
-                      <p>
-                        <i class="fab fa-ethereum"></i>
-                        <span class="ml-2 ${css.text}" onclick=${() => switchToPreviousVersion()}>Old experience</span>
+                        <a class="${css.text}" target="__blank" href="https://medium.com/@sbercoin">Medium Posts</a>
                       </p>
                     </div>
                   </div>
